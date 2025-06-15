@@ -1,7 +1,6 @@
 const colors = document.querySelectorAll(".changeC");
 const container = document.querySelector(".container");
 const header = document.querySelector("header");
-localStorage.clear();
 function applyColor() {
   let savedbageColor = window.localStorage.getItem("sendbagecolor");
   let savedtextColor = window.localStorage.getItem("sendtextcolor");

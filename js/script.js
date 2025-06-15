@@ -4,9 +4,7 @@ const header = document.querySelector("header");
 function applyColor() {
   let savedbageColor = window.localStorage.getItem("sendbagecolor");
   let savedtextColor = window.localStorage.getItem("sendtextcolor");
-  let savedbgcolor = window.localStorage.getItem("bgcolor");
   if (savedbageColor && savedtextColor) {
-    document.body.style.backgroundColor = savedbgcolor;
     container.style.backgroundColor = savedbageColor;
     container.style.color = savedtextColor;
     header.style.color = savedtextColor;
@@ -23,7 +21,6 @@ applyColor();
 function handleColor(e) {
   window.localStorage.setItem("sendbagecolor", e.target.dataset.color);
   window.localStorage.setItem("sendtextcolor", e.target.dataset.text);
-  window.localStorage.setItem("bgcolor", e.target.dataset.bg);
   applyColor();
 }
 colors.forEach((col) => {
@@ -33,7 +30,7 @@ colors.forEach((col) => {
 const showDate = document.querySelector(".date");
 
 if (showDate) {
-  const date = new Date(); // Get the current date
+  const date = new Date();
   const options = { weekday: "short", day: "2-digit", month: "short" };
   const formattedDate = date
     .toLocaleDateString("en-GB", options)

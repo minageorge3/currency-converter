@@ -1,0 +1,188 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.container {
+  width: 90vw;
+  max-width: 1200px;
+  margin: 2rem auto;
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid #999;
+  border-radius: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+.container > * {
+  width: 80%;
+  flex: 1;
+}
+.container .change-color {
+  /* box-shadow: 0 0 5px #a01458; */
+  width: 12rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+.container .change-color div {
+  width: 2rem;
+  height: 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.container .change-color div:nth-child(1) {
+  background-color: #fff;
+}
+.container .change-color div:nth-child(2) {
+  background-color: #72b5f795;
+}
+.container .change-color div:nth-child(3) {
+  background-color: #2e2e5e;
+}
+.container .change-color div:nth-child(4) {
+  background-color: #3d3d3d;
+}
+.container .change-color div:nth-child(5) {
+  background-color: transparent;
+  box-shadow: 0 0 5px #ff0000;
+}
+.colorchoosen {
+  scale: 1.3;
+  box-shadow: 0 0 7px #f73693;
+}
+.container header {
+  font-size: 1.5rem;
+  text-transform: none;
+  margin-top: 1rem;
+}
+.fa-dollar-sign {
+  font-size: 1.5rem;
+  animation: sign 3s infinite;
+  margin-left: 0.5rem;
+}
+@keyframes sign {
+  0%,
+  100% {
+    transform: translateY(-1rem) rotate(-50deg) rotate(-360deg);
+    color: #0fe958;
+  }
+  25%{
+    color: #ffffff;
+
+  }
+  
+  50% {
+    transform: translateY(0);
+    color: #b41562;
+  }
+}
+form .amount {
+  margin: 1.5rem 0 2rem;
+}
+form .amount p {
+  font-size: 1rem;
+}
+form .amount input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  outline: none;
+  font-size: 1.1rem;
+  border: 1.3px solid #999;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+form .amount input:focus {
+  border: 2px solid #df1275;
+}
+form .drop-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 370px) {
+  form .drop-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+form .select-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #fff;
+  padding: 0.2rem;
+  border: 1.3px solid #999;
+  border-radius: 0.3rem;
+  margin: 0.5rem 0;
+  height: 3rem;
+}
+form .select-box img {
+  max-width: 3rem;
+  height: 100%;
+}
+form .select-box select {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  height: 100%;
+}
+.icon {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #2e2e5e;
+  color: #a01458;
+  cursor: pointer;
+  text-shadow: 0 0 2px #999;
+}
+form .exchange-rate {
+  font-size: 1.2rem;
+  font-weight: 700;
+  /* color: #2e2e5e; */
+}
+.btn {
+  background-color: #df1275;
+  color: #fff;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  margin: 1.3rem 0 1rem;
+  font-size: 1rem;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+footer p:nth-child(1) {
+  font-size: 0.8rem;
+}

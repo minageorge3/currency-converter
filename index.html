@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currency.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <img src="/images/8.jpg" alt="" class="image">
+    <div class="container">
+      <div class="change-color">
+        <div class="changeC" data-color="#ffffff8f" data-text="#000000" data-bg="#b9b9b9"></div>
+        <div class="changeC" data-color="#72b5f78f" data-text="#000000" data-bg="#4074a8"></div>
+        <div class="changeC" data-color="#2e2e5e8f" data-text="#ffffff" data-bg="#222246"></div>
+        <div class="changeC" data-color="#3d3d3d8f" data-text="#ffffff" data-bg="#222222"></div>
+        <div class="changeC" data-color="#ffffff00" data-text="#ffffff" data-bg="#222222"></div>
+      </div>
+      <header>
+        <i class="fa-solid fa-euro-sign"></i>urrency Converter
+        <i class="fa-solid fa-dollar-sign"></i>
+      </header>
+      <form action="#">
+        <div class="amount">
+          <p>enter amount</p>
+          <input type="text" value="1" />
+        </div>
+        <div class="drop-list">
+          <div class="from">
+            <p>from</p>
+            <div class="select-box">
+              <img src="https://flagsapi.com/GB/flat/64.png" alt="flag" />
+              <select></select>
+            </div>
+          </div>
+          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+          <div class="to">
+            <p>to</p>
+            <div class="select-box">
+              <img src="https://flagsapi.com/EG/flat/64.png" alt="flag" />
+              <select></select>
+            </div>
+          </div>
+        </div>
+        <div class="exchange-rate">getting exchange rate...</div>
+        <button class="btn">get exchange rate</button>
+      </form>
+      <hr class="line" />
+      <footer>
+        <p class="copy">© mina said george</p>
+        <p class="date"></p>
+      </footer>
+    </div>
+    <script src="js/country-list.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
